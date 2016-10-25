@@ -6,22 +6,29 @@
   <base href="/"  />
   <link charset="utf-8" rel="stylesheet" href="/css/style.css">
   <script  charset="utf-8" src="/js/app.js" type="text/javascript"></script>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
-    <ul class="nav nav-pills">
-   <li role="presentation" class="active"><a href="#">Home</a></li>
-   <li role="presentation"><a href="#" ui-sref="login">Login</a></li>
-   <li role="presentation"><a href="#" ui-sref="register">Register</a></li>
-   <li role="presentation"><a href="#">Messages</a></li>
- </ul>
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="home">Home</a></li>
+    <li role="presentation"><a href="#" ui-sref="login">Login</a></li>
+    <li role="presentation"><a href="#" ui-sref="register">Register</a></li>
+    <li role="presentation"><a href="postsNew">Post an add</a></li>
+    <li><a class="nav-bar-links" href="home" ng-click="main.logout()">Logout</a>
+    </li>
 
- <h1>SITTER</h1>
+  </ul>
+
+  <h1>SITTER</h1>
 
 
- <main ui-view>
+  <main ui-view class="container">
 
- </main>
+  </main>
 
-</body>
-</html>
+  <footer>
+    <h3>&copy; Caz Brunnen</h1>
+    </footer>
+
+  </body>
+  </html>
