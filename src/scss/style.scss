@@ -3,9 +3,8 @@
 body {
   background-color: #E8E8E8;
   color: rgba(55, 18, 55, 1);
+  font-family: "Aaargh";
 }
-
-
 
 footer {
   position: fixed;
@@ -16,7 +15,6 @@ footer {
   text-align: center;
   background-color: #0CBABA;
   color: rgba(55, 18, 55, 1);
-
 }
 
 #grad1 {
@@ -34,15 +32,57 @@ footer {
   -moz-background-size: cover;
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
-#logo img {
- height: 300px;
- width: 300px;
+// #logo img {
+//  height: 300px;
+//  width: 300px;
+//  margin: auto;
+// }
+
+.baby {
+  font-family: "Little Days";
+  font-size: 40px;
+  position: absolute;
+  max-width: 30%;
+  top: 10%;
+  left: 10%;
+}
+
+img.baby {
+  position: absolute;
+	max-width: 30%;
+	top: 10%;
+	left: 10%;
+	border-radius: 3px;
+	// box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+img.baby:empty
+{
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.baby { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.baby { max-height: 90%; }
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(55, 18, 55, 1);
+    font-family: "Little Days";
+    font-size: 40px;
+    padding-top: 22px;
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 16px;
@@ -84,4 +124,30 @@ footer {
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #4effef;
+}
+
+.btn-custom {
+  background: rgba(70, 151, 217, 1);
+  background: -webkit-linear-gradient(top, #818AA3 0%, rgba(78, 255, 239, 1) 100%);
+  background: linear-gradient(to bottom, #818AA3 0%, rgba(78, 255, 239, 1) 100%);
+  border-color: #4effef;
+  color: rgba(55, 18, 60, 1);
+  font-size: 14px;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.btn-custom:hover {
+  background: rgba(84, 247, 228, 1);
+  background: -webkit-linear-gradient(top, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  background: linear-gradient(to bottom, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  border-color: #4effef;
+  color: rgba(254, 205, 170, 1);
+}
+.btn-custom:active, .btn-custom:focus {
+  background: rgba(60, 232, 226, 1);
+  background: -webkit-linear-gradient(top, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  background: linear-gradient(to bottom, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  border-color: #4effef;
+  color: rgba(254, 205, 170, 1);
 }

@@ -1,3 +1,9 @@
+// angular.module('sitterApp', ['uiGmapgoogle-maps'])
+//     .controller('mainCtrl', function($scope) {
+//         $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+//     });
+
+
 // angular.module("sitterApp", ['uiGmapgoogle-maps'])
 //         .controller("mapCtrl", function($scope, $interval) {
 //                 $scope.map = {
