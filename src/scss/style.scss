@@ -2,19 +2,29 @@
 
 body {
   background-color: #E8E8E8;
+  color: rgba(55, 18, 55, 1);
 }
 
+
+
 footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   text-align: center;
   background-color: #0CBABA;
+  color: rgba(55, 18, 55, 1);
+
 }
 
 #grad1 {
+  position: fixed;
+  right: 0;
+  // bottom: 0;
+  left: 0;
+  padding: 1rem;
   background: #0CBABA; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #4EFFEF, #0CBABA); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, #4EFFEF, #0CBABA); /* For Opera 11.1 to 12.0 */
