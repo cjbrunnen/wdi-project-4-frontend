@@ -26,21 +26,21 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     templateUrl:  "/js/views/users/index.html",
     controller:   "usersIndexCtrl as usersIndex",
   })
-  .state("mainIndex", {
-    url: "/index",
-    templateUrl: "/js/views/mainIndex.html",
-    controller:  "mainIndexCtrl as mainIndex"
-  });
 // .state("usersNew", {
 //     url: "/users/new",
 //     templateUrl: "/js/views/users/new.html",
 //     controller: "UsersNewCtrl as usersNew"
 // }
-// .state("postsNew", {
-//     url: "/posts/new",
-//     templateUrl: "/js/views/posts/new.html",
-//     controller: "PostsNewCtrl as postsNew"
-// }
+.state("postsIndex", {
+    url: "/posts",
+    templateUrl: "/js/views/posts/index.html",
+    controller: "PostsIndexCtrl as postsIndex"
+})
+.state("postsNew", {
+    url: "/posts/new",
+    templateUrl: "/js/views/posts/new.html",
+    controller: "PostsNewCtrl as postsNew"
+});
 // .state("usersEdit", {
 //     url: "/users/:id/edit",
 //     templateUrl: "/js/views/users/edit.html",
@@ -55,6 +55,11 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   //   url: '/users/:id',
   //   templateUrl: '/js/views/users/show.html',
   //   controller: 'UsersShowCtrl as users'
+  // })
+  // .state('postsShow', {
+  //   url: '/posts/:id',
+  //   templateUrl: '/js/views/posts/show.html',
+  //   controller: 'PostsShowCtrl as posts'
   // })
 
   $urlRouterProvider.otherwise("/");

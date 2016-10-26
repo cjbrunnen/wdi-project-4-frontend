@@ -1,0 +1,35 @@
+<h2>Post an add</h2>
+<form class="add-item" ng-submit="postsNew.submit()">
+  <div class="form-group">
+    <label>Title</label>
+    <input ng-model="postsNew.post.title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Are you a Sitter or a Parent?</label><br>
+    <select name="categories" ng-model="postsNew.post.role">
+      <option value="sitter" selected>Sitter</option>
+      <option value="parent">Parent</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <textarea ng-model="postsNew.post.description" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Gender</label><br>
+    <select name="sex" ng-model="postsNew.post.sex">
+      <option value="female" selected>Female</option>
+      <option value="male">Male</option>
+      <option value="unisex">Trans</option>
+    </select>
+  </div>
+
+  <!-- I want this to be lng lat so it can go on a map -->
+  <div class="form-group">
+    <label>Location</label>
+    <textarea ng-model="postsNew.post.location" class="form-control"></textarea>
+  </div>
+
+  <input type="submit" value="Add" class="btn btn-primary">
+  <a href="javascript:history.back()"><input type="button" value="Cancel" class="btn btn-default"></a>
+</form>
