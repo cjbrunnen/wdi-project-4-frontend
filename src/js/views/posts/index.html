@@ -1,9 +1,25 @@
 <h1>Browse adds</h1>
-<ng-map center="[40.74, -74.18]"></ng-map>
-<!-- <div id="map_canvas" ng-controller="mainCtrl">
-      <ui-gmap-google-map center="map.center" zoom="map.zoom"></ui-gmap-google-map>
- </div> -->
 
+<ng-map id="map_canvas"
+  center="[51.4953181,-0.0714302]"
+  zoom="9">
+  <marker ng-repeat="post in postsIndex.posts" title="{{postsIndex.post.title}}" position="{{post.lat}}, {{post.lng}}" on-click="postsIndex.showPost(post)"></marker>
+
+  <info-window id="myInfoWindow">
+    <div ng-non-bindable="">
+      <h3 class="little-days-fonts">{{postsIndex.post.role}}</h3>
+      <h6 class="aaargh-fonts">{{postsIndex.post.sex}}</h6>
+      <h4 class="aaargh-fonts">{{postsIndex.post.title}}</h4>
+      <h5 class="aaargh-fonts">{{postsIndex.post.description}}</h5>
+      <h6 class="aaargh-fonts">{{postsIndex.post.location}}</h6>
+    </div>
+  </info-window>
+
+</ng-map>
+
+
+
+<!-- commented out but kept for further development.
 <div class="media" ng-repeat="post in postsIndex.posts">
   <div class="media-left">
     <h4>{{post.title}}</h4>
@@ -19,4 +35,4 @@
       {{post.sex}}
     </p>
   </div>
-</div>
+</div> -->

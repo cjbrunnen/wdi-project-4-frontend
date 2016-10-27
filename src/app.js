@@ -2,7 +2,8 @@ angular.
 module("sitterApp", [
   "ui.router",
   "ngResource",
-  "angular-jwt"
+  "angular-jwt",
+  "ngMap"
 ]);
 
 console.log("loaded");

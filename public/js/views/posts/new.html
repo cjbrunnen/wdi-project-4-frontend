@@ -2,32 +2,42 @@
 <form class="add-item" ng-submit="postsNew.submit()">
   <div class="form-group">
     <label>Title</label>
-    <input ng-model="postsNew.post.title" class="form-control">
+    <input ng-model="postsNew.post.title" class="form-control" placeholder="This will be the title of your add">
   </div>
   <div class="form-group">
     <label>Are you a Sitter or a Parent?</label><br>
-    <select name="categories" ng-model="postsNew.post.role">
+    <select name="categories" ng-model="postsNew.post.role" placeholder="Sitter">
       <option value="sitter" selected>Sitter</option>
       <option value="parent">Parent</option>
     </select>
   </div>
   <div class="form-group">
     <label>Description</label>
-    <textarea ng-model="postsNew.post.description" class="form-control"></textarea>
+    <textarea ng-model="postsNew.post.description" class="form-control" placeholder="Tell us a little about yourself"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Telephone number</label>
+    <input ng-model="postsNew.post.telephone" class="form-control" placeholder="Please use a number you are easily contactable on">
   </div>
   <div class="form-group">
     <label>Gender</label><br>
     <select name="sex" ng-model="postsNew.post.sex">
       <option value="female" selected>Female</option>
       <option value="male">Male</option>
-      <option value="unisex">Trans</option>
+      <option value="unisex">Transgender</option>
     </select>
   </div>
-
-  <!-- I want this to be lng lat so it can go on a map -->
   <div class="form-group">
-    <label>Location</label>
-    <textarea ng-model="postsNew.post.location" class="form-control"></textarea>
+    <label>Areas covered</label>
+    <input ng-model="postsNew.post.location" class="form-control" placeholder="You can add multiple areas">
+  </div>
+  <div class="form-group">
+    <label>Lattitude</label>
+    <input ng-model="postsNew.post.lat" class="form-control" placeholder="If you don't know your lattitude, google it.">
+  </div>
+  <div class="form-group">
+    <label>Longditude</label>
+    <input ng-model="postsNew.post.lng" class="form-control" placeholder="If you don't know your lattitude, google it.">
   </div>
 
   <button type="submit" class="btn btn-custom" value="Submit">Submit</button>

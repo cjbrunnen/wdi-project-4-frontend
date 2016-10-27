@@ -1,13 +1,14 @@
 @import "bower";
 
 body {
-  background-color: #E8E8E8;
+  background: #4EFFEF;
+  background: -webkit-linear-gradient(left top, #4EFFEF, #0CBABA); /* For Safari 5.1 to 6.0 */
+
   color: rgba(55, 18, 55, 1);
   font-family: "Aaargh";
 }
 
 footer {
-  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
@@ -15,6 +16,9 @@ footer {
   text-align: center;
   background-color: #0CBABA;
   color: rgba(55, 18, 55, 1);
+  position: bottom;
+  bottom: 0px;
+  width: 100%;
 }
 
 #grad1 {
@@ -35,11 +39,14 @@ footer {
   width: 100%;
 }
 
-// #logo img {
-//  height: 300px;
-//  width: 300px;
-//  margin: auto;
-// }
+#baby-brand {
+  height: 30px;
+  width: 30px;
+}
+
+a.navbar-brand {
+  clear: both;
+}
 
 .baby {
   font-family: "Little Days";
@@ -52,22 +59,22 @@ footer {
 
 img.baby {
   position: absolute;
-	max-width: 30%;
-	top: 10%;
-	left: 10%;
-	border-radius: 3px;
-	// box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+  max-width: 30%;
+  top: 10%;
+  left: 10%;
+  border-radius: 3px;
+  // box-shadow: 0 3px 6px rgba(0,0,0,0.9);
 }
 
 img.baby:empty
 {
-	top: 30%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (orientation: portrait) {
@@ -79,51 +86,51 @@ img.baby:empty
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(55, 18, 55, 1);
-    font-family: "Little Days";
-    font-size: 40px;
-    padding-top: 22px;
+  color: rgba(55, 18, 55, 1);
+  font-family: "Little Days";
+  font-size: 40px;
+  padding-top: 22px;
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 16px;
-    background-color: rgba(78, 255, 239, 1);
-    background: -webkit-linear-gradient(top, rgba(129, 138, 163, 1) 0%, rgba(78, 255, 239, 1) 100%);
-    background: linear-gradient(to bottom, rgba(129, 138, 163, 1) 0%, rgba(78, 255, 239, 1) 100%);
-    border-width: 0px;
-    border-radius: 0px;
+  font-size: 16px;
+  background-color: rgba(78, 255, 239, 1);
+  background: -webkit-linear-gradient(top, rgba(129, 138, 163, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  background: linear-gradient(to bottom, rgba(129, 138, 163, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  border-width: 0px;
+  border-radius: 0px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(55, 18, 55, 1);
-    background-color: rgba(248, 248, 248, 0);
+  color: rgba(55, 18, 55, 1);
+  background-color: rgba(248, 248, 248, 0);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(254, 205, 170, 1);
-    background-color: rgba(78, 255, 239, 1);
-    background: -webkit-linear-gradient(top, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
-    background: linear-gradient(to bottom, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  color: rgba(254, 205, 170, 1);
+  background-color: rgba(78, 255, 239, 1);
+  background: -webkit-linear-gradient(top, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  background: linear-gradient(to bottom, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(55, 18, 55, 1);
-    background-color: rgba(78, 255, 239, 1);
-    background: -webkit-linear-gradient(top, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
-    background: linear-gradient(to bottom, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  color: rgba(55, 18, 55, 1);
+  background-color: rgba(78, 255, 239, 1);
+  background: -webkit-linear-gradient(top, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
+  background: linear-gradient(to bottom, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #4effef;
+  border-color: #4effef;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #4effef;
+  background-color: #4effef;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #4effef;
+  background-color: #4effef;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #4effef;
+  background-color: #4effef;
 }
 
 .btn-custom {
@@ -150,4 +157,30 @@ img.baby:empty
   background: linear-gradient(to bottom, rgba(55, 18, 60, 1) 0%, rgba(78, 255, 239, 1) 100%);
   border-color: #4effef;
   color: rgba(254, 205, 170, 1);
+}
+
+.add-item, #login-form {
+  padding-bottom: 30px;
+  clear: both;
+}
+
+.photo {
+  height: 300px;
+  width: 300px;
+}
+
+#map_canvas{
+  height: 500px;
+  width: 900px;
+  margin: 0 auto;
+  // style: [{"elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#000000"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#0000ff"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ff0000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000100"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"color":"#ffff00"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"color":"#ff0000"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffa91a"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#000000"}]},{"featureType":"landscape.natural","stylers":[{"saturation":36},{"gamma":0.55}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#000000"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"lightness":-100},{"weight":2.1}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"invert_lightness":true},{"hue":"#ff0000"},{"gamma":3.02},{"lightness":20},{"saturation":40}]},{"featureType":"poi.attraction","stylers":[{"saturation":100},{"hue":"#ff00ee"},{"lightness":-13}]},{"featureType":"poi.government","stylers":[{"saturation":100},{"hue":"#eeff00"},{"gamma":0.67},{"lightness":-26}]},{"featureType":"poi.medical","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":100},{"lightness":-37}]},{"featureType":"poi.medical","elementType":"labels.text.fill","stylers":[{"color":"#ff0000"}]},{"featureType":"poi.school","stylers":[{"hue":"#ff7700"},{"saturation":97},{"lightness":-41}]},{"featureType":"poi.sports_complex","stylers":[{"saturation":100},{"hue":"#00ffb3"},{"lightness":-71}]},{"featureType":"poi.park","stylers":[{"saturation":84},{"lightness":-57},{"hue":"#a1ff00"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"gamma":0.11}]},{"featureType":"transit.station","elementType":"labels.text.stroke","stylers":[{"color":"#ffc35e"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-100}]},{"featureType":"administrative","stylers":[{"saturation":100},{"gamma":0.35},{"lightness":20}]},{"featureType":"poi.business","elementType":"geometry.fill","stylers":[{"saturation":-100},{"gamma":0.35}]},{"featureType":"poi.business","elementType":"labels.text.stroke","stylers":[{"color":"#69ffff"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text.stroke","stylers":[{"color":"#c3ffc3"}]}]
+}
+
+.little-days-fonts {
+  font-family: "Little Days";
+  font-weight: bold;
+}
+
+.aaargh-fonts {
+  font-family: "Aaargh";
 }
