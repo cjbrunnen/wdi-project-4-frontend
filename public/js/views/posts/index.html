@@ -2,7 +2,9 @@
 
 <ng-map id="map_canvas"
   center="[51.4953181,-0.0714302]"
-  zoom="9">
+  zoom="9"
+  styles='[{"stylers":[{"hue":"#007fff"},{"saturation":89}]},{"featureType":"water","stylers":[{"color":"#ffffff"}]},{"featureType":"administrative.country","elementType":"labels","stylers":[{"visibility":"off"}]}]'
+  >
   <marker ng-repeat="post in postsIndex.posts" title="{{postsIndex.post.title}}" position="{{post.lat}}, {{post.lng}}" on-click="postsIndex.showPost(post)"></marker>
 
   <info-window id="myInfoWindow">
@@ -12,6 +14,7 @@
       <h4 class="aaargh-fonts">{{postsIndex.post.title}}</h4>
       <h5 class="aaargh-fonts">{{postsIndex.post.description}}</h5>
       <h6 class="aaargh-fonts">{{postsIndex.post.location}}</h6>
+      <h6 class="aaargh-fonts">{{postsIndex.post.telephone}}</h6>
     </div>
   </info-window>
 
